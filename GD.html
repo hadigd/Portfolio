@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Graphic Designer Portfolio">
+  <meta name="keywords" content="Graphic Design, Web Design, Portfolio">
+  <meta name="author" content="Your Name">
+  <title>Your Name - Graphic Designer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="favicon.ico">
+  <style type="text/css" media="all">
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px #fff;
+  overflow: hidden;          /* hides the overflowing text */
+  border-right: 2px solid black; /* makes the blinking cursor */
+  white-space: nowrap;       /* keeps the text on one line */
+  width: 100%;                  /* start with no width */
+  animation: typing 1.5s steps(50, end), blink 0.2s step-end infinite;
+
+}
+
+
+@keyframes typing {
+  from { width: 0 ;
+  }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  0% { border-color: transparent;
+  }
+  5% { border-color: #fff;
+  }
+  10% { border-color: transparent;
+  }
+  
+}
+
+
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero .cta2 {
+  background-color: #009f23;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.hero .cta {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .cta:hover {
+  background-color: #2575fc;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.project-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  padding: 15px;
+}
+
+.project-card p {
+  padding: 0 15px 15px;
+  font-size: 16px;
+}
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 15px;
+  background-color: #2575fc;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #6a11cb;
+}
+#h3contect{
+  font-size: 40px;
+  margin-top: 40px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffcc;
+}
+
+.footer-email a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>XyberNova</h1>
+        <p>Creative Graphic Designer</p>
+        <a href="#about" class="cta">See My Work</a>
+        <a href="#contact" class="cta2">CONTECT ME</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m [WASIQ KHAN],a CEO and FOUNDER of  XyberNova a passionate graphic designer with a flair for modern, sleek, and innovative designs. I specialize in branding, web design, and UI/UX.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Canva</li>
+      <li>Web Design</li>
+      <li>Logo Design</li>
+      <li>Mocup Design</li>
+      <li>Insta Post Design</li>
+      <li>Business Card Design</li>
+      <li>Info graphics</li>
+      <li>Branding</li>
+      <li>Flex Design</li>
+      <li>HTML and CSS</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+      <li>YouTub Thumbnail Design</li>
+      <li>UI/UX Design</li>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    
+    
+    <div class="project-cards">
+      <!-- Example Project 1 -->
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1">
+        <h3>My Brand LOGO Design</h3>
+        <p>A cyberpunk style logo design for my own brand XyberNova.</p>
+      </div>
+    <div class="project-cards">
+      <!-- Example Project 2 -->
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 1">
+        <h3>CV / RESUME</h3>
+        <p>A modern cv / resume for a clint in blue and white color combo .</p>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+    <div class="project-cards">
+      <!-- Example Project 3 -->
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 1">
+        <h3>LOGO Design</h3>
+        <p>A new started perfume brand logo design.</p>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+    <div class="project-cards">
+      <!-- Example Project 4 -->
+      <div class="project-card">
+        <img src="project4.png" alt="Project 1">
+        <h3>Updated LOGO Design</h3>
+        <p>It's a Updated version logo design for same perfume brand. </p>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+    <div class="project-cards">
+      <!-- Example Project 5 -->
+      <div class="project-card">
+        <img src="project5.png" alt="Project 1">
+        <h3>Mockup Design</h3>
+        <p>Premium style mockup design for perfume brand.</p>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+    </div>
+    
+    <h3 id="h3contect">FOR MORE PLEASE CONTECT 👇</h3>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+<footer class="footer">
+  <div class="footer-content">
+    <h3>XyberNova</h3>
+    <p>Creative Graphic Designer | Branding | UI/UX | Web Design</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1MhoHKCcVv/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      
+      <a href="https://www.instagram.com/xybernovaservices?igsh=MTZueHZ1eDZlOTlnMg==" target="_blank"><i class="fab fa-instagram"></i></a>
+      
+      <a href="https://www.linkedin.com/in/wasiq-khan-887153323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      
+      <a href="https://www.tiktok.com/@xybernova2?_t=ZS-8vHvvbkFQfp&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      
+      <a href="mailto:xybernovaservices@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <p class="footer-email">Email: <a href="mailto:xybernovaservices@gmail.com">xybernovaservices@gmail.com</a></p>
+    <p class="copyright">© 2025 XyberNova. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+  <script >
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  // Get the values from the form
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Construct the WhatsApp message
+  const whatsappMessage = `*New Message from Portfolio*\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+  // WhatsApp API URL with your WhatsApp number (replace 'YOUR_PHONE_NUMBER' with your actual phone number, including country code)
+  const whatsappNumber = "+923142103462"; // Replace with your WhatsApp number (e.g., +1234567890)
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  // Open WhatsApp with the pre-filled message
+  alert("Are you sure your message is complete and clear? your message in Progress ✅");
+
+  window.open(whatsappLink, "_blank");
+  location.reload();
+});
+
+  </script>
+</body>
+
+</html>
